@@ -8,6 +8,7 @@ import BeerMonth from './components/BeerMonth.vue';
 import BeerTable from './components/BeerTable.vue';
 import Pagination from './components/Pagination.vue';
 import Filters from './components/Filters.vue';
+import Settings from './components/Settings.vue';
 
 Vue.config.productionTip = false
 
@@ -17,6 +18,7 @@ Vue.component('beer-month', BeerMonth);
 Vue.component('beer-table', BeerTable);
 Vue.component('pagination', Pagination);
 Vue.component('filters', Filters);
+Vue.component('settings', Settings);
 
 export const eventBus = new Vue();
 
