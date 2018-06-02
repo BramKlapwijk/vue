@@ -46,7 +46,7 @@ export default {
   beforeMount (){
     var self = this;
     let id = Math.floor(Math.random() * 750);;
-    $.getJSON("http://api.bram-klapwijk.nl/api/beers/"+ id, function (data) {
+    $.getJSON("http://api.bram-klapwijk.nl/api/beers/random", function (data) {
       self.loaded = true;
       self.beer = data;
     });

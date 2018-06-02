@@ -79,7 +79,9 @@
             }
         },
         beforeMount() {
-            var self = this;
+            // this.$http.get('http://api.bram-klapwijk.nl/api/beers/', function () {
+            //
+            // }, {headers: {''}});
             $.getJSON("http://api.bram-klapwijk.nl/api/beers/", function (data) {
                 self.beers = ['hoi'];
                 self.beers = $.map(data, function (el) {
